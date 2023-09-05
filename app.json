@@ -21,7 +21,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./app/assets/icon-eurodesk-eurokompas.png",
         "backgroundColor": "#ffff"
-      }
+      },
+      "package": "pl.Eurocompass"
     },
     "web": {
       "favicon": "./app/assets/favicon.png",
