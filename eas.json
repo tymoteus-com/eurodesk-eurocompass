@@ -10,6 +10,24 @@
     "production": {}
   },
   "cli": {
-    "requireCommit": true
+    "requireCommit": true,
+    "version": "SEMVER_RANGE"
+  },
+  "submit": {
+    "production": {
+      "android": {
+        "serviceAccountKeyPath": "../keyApi/eurocompass/pc-api-8980465811777290521-864-8f04e877d8db.json",
+        "track": "production",
+        "releaseStatus": "completed",
+        "rollout": 1,
+        "applicationId": "eurodesk-eurokompas-app"
+      },
+      "ios": {
+        "appleId": "pawel@threepio.pl",
+        "ascAppId": "17599406561",
+        "appleTeamId": "K8WLWX62BT"
+      }
+    }
   }
+
 }
