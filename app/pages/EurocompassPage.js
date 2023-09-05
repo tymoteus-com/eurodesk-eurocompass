@@ -10,7 +10,7 @@ var items;
 var setData;
 var code;
 
-// funkcja udostpeniania wynikow wyszukiwania
+// funkcja udostepniania wynikow wyszukiwania
 const onShare = async () => {
     try {
        generatorShortCode();
@@ -21,7 +21,6 @@ const onShare = async () => {
        });
        if (result.action === Share.sharedAction) {
           if (result.activityType) {
-              //console.log('actityType');
               // shared with activity type of result.activityType
            } else {
               // shared
@@ -231,7 +230,6 @@ const styles = StyleSheet.create({
         paddingBottom: 20,
         paddingTop: 10,
         justifyContent: 'center',
-        //backgroundColor: '#fafafa',
         borderBottomWidth: 1,
         borderColor: colors.light,
         borderRadius: 0,

@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
-//import { Switch, Route } from 'react-router-dom';
 import axios from "axios";
-
 
 function Menu() {
 
@@ -11,11 +9,8 @@ function Menu() {
     useEffect(() => {
        axios.get("https://app.eurodesk.pl/api/menu").then((response) => {
          setData(response.data);
-         //console.log(response.data);
        });
-
      }, []);
-
 
     return (
       <View style={styles.menu}>

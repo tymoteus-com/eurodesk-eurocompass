@@ -3,7 +3,6 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, Button, Alert, Platform, Pressable } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-//import { createDrawerNavigator } from '@react-navigation/drawer';
 
 import backButton from './app/Edesk';
 import colors from './app/config/colors';
@@ -12,17 +11,11 @@ import StartPage from './app/pages/StartPage';
 import ContactPage from './app/pages/ContactPage';
 import FiltersPage from './app/pages/FiltersPage';
 import EurocompassPage from './app/pages/EurocompassPage';
-//import BlankPage from './app/pages/BlankPage';
 
 const Stack = createStackNavigator();
-//const Drawer = createDrawerNavigator();
-//const bButton = bbButton();
-
-
 
 export default function App() {
 
-  //const handlePress = () => console.log('Text press');
   return (
             <NavigationContainer>
                 <Stack.Navigator>
@@ -126,4 +119,3 @@ const styles = StyleSheet.create({
         textAlign: 'center',
     },
 });
-

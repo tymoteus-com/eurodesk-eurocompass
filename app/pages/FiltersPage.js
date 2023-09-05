@@ -26,7 +26,6 @@ function FiltersPage({navigation}) {
           const indexToRemove = newSelectedCategory.indexOf(index);
           newSelectedCategory.splice(indexToRemove, 1);
         }
-
         setSelectedCategory(newSelectedCategory);
     };
 
@@ -190,7 +189,6 @@ function FiltersPage({navigation}) {
         </RNBounceable>
        </View>
     )
-
 }
 
 
