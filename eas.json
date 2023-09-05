@@ -11,15 +11,14 @@
   },
   "cli": {
     "requireCommit": true,
-    "version": "SEMVER_RANGE"
+    "version": ">= 3.17.1"
   },
   "submit": {
     "production": {
       "android": {
         "serviceAccountKeyPath": "../keyApi/eurocompass/pc-api-8980465811777290521-864-8f04e877d8db.json",
-        "track": "production",
+        "track": "beta",
         "releaseStatus": "completed",
-        "rollout": 1,
         "applicationId": "eurodesk-eurokompas-app"
       },
       "ios": {
