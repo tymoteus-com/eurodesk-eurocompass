@@ -10,7 +10,7 @@ var items;
 var setData;
 var code;
 
-// funkcja udostepniania wynikow wyszukiwania
+// udostepnianie wynikow wyszukiwania
 const onShare = async () => {
     try {
        generatorShortCode();
@@ -73,7 +73,7 @@ const sendDataProductIds = async () => {
     }
 };
 
-// glowna funkcja wyswietlajaca liste wynikow
+// lista
 function EurocompassPage({ route, navigation }) {
 
     const [isLoading, setIsLoading] = useState(true);
