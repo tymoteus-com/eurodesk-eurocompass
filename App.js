@@ -4,7 +4,7 @@ import { StyleSheet, Text, View, Image, Button, Alert, Platform, Pressable } fro
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
-import backButton from './app/Edesk';
+//import backButton from './app/Edesk';
 import colors from './app/config/colors';
 
 import StartPage from './app/pages/StartPage';

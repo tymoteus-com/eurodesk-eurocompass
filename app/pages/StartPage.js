@@ -54,7 +54,7 @@ function StartPage({navigation}) {
                             fadeDuration={700}
                             style={styles.logo}
                             source={{
-                                uri: "https://www.eurodesk.pl/images/logo-eurodesk-polska.png"
+                                uri: env.eurodesk.url+"/images/logo-eurodesk-polska.png"
                             }} />
                     </View>
                 </View>
@@ -86,7 +86,7 @@ function StartPage({navigation}) {
                          </Text>
                      </Pressable>
                      <Pressable
-                         onPress={() => handlePressUrl('https://www.eurodesk.pl')}
+                         onPress={() => handlePressUrl(env.eurodesk.url)}
                          style={styles.boxBottomLink}>
                             <Text
                                 fadeDuration={1200}

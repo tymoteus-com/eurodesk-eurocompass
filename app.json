@@ -2,7 +2,7 @@
   "expo": {
     "name": "Eurocompass Eurodesk PL",
     "slug": "Eurocompass",
-    "version": "1.0.20",
+    "version": "1.0.21",
     "orientation": "portrait",
     "icon": "./app/assets/icon-eurodesk.png",
     "userInterfaceStyle": "light",
@@ -33,6 +33,9 @@
       "eas": {
         "projectId": "7dcec1c5-f31e-4889-9c7b-a6ff58ea7d4b"
       }
+    },
+    "updates": {
+      "useClassicUpdates": true
     }
   }
 }
