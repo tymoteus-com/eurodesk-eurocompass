@@ -9,7 +9,7 @@ import axios from "axios";
 
 import colors from '../config/colors';
 import env from '../config/env';
-
+import slug from '../config/slug';
 
 function FiltersPage({navigation}) {
 
@@ -113,7 +113,7 @@ function FiltersPage({navigation}) {
        <View style={styles.container}>
         <ScrollView>
             <Text style={styles.listHeader}>
-                Dla kogo
+                {slug.label.form_whom}
             </Text>
             {
                 itemsWhom.map((item) => {
@@ -133,7 +133,7 @@ function FiltersPage({navigation}) {
                      })
                 }
             <Text style={styles.listHeader}>
-               Kategoria
+               {slug.label.category}
             </Text>
             {
                items.map((item) => {
@@ -153,7 +153,7 @@ function FiltersPage({navigation}) {
                 })
             }
             <Text style={styles.listHeader}>
-                 Źródło informacji
+                 {slug.label.source}
             </Text>
             {
                 itemsSource.map((item) => {
@@ -184,7 +184,7 @@ function FiltersPage({navigation}) {
               });
            }}>
            <Text style={styles.btnSendText}>
-              WYSZUKAJ
+              {slug.navi.search}
            </Text>
         </RNBounceable>
        </View>
@@ -202,7 +202,7 @@ const styles = StyleSheet.create({
     listHeader: {
         fontSize: 20,
         color: colors.dark,
-        fontWeight: 600,
+        fontWeight: "600",
         paddingTop: 20,
         paddingLeft: 15,
         paddingRight: 15,

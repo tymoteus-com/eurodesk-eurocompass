@@ -6,6 +6,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import colors from '../config/colors';
 import env from '../config/env';
+import slug from '../config/slug';
 
 const Stack = createStackNavigator();
 
@@ -40,10 +41,10 @@ const OpenURLButton = ({url, children}: OpenURLButtonProps) => {
 function StartPage({navigation}) {
 
     const onPressHandlerFilters = () => {
-        navigation.navigate('Wybierz');
+        navigation.navigate(slug.navi.filters);
     }
     const onPressHandlerContact = () => {
-         navigation.navigate('Kontakt');
+         navigation.navigate(slug.navi.contact);
     }
 
     return (
@@ -63,15 +64,15 @@ function StartPage({navigation}) {
                         fadeDuration={700}
                         style={styles.icon}
                         source={require("../assets/ico-eurocompass.png")} />
-                    <Text style={styles.h1}>Eurokompas</Text>
-                    <Text style={styles.h2}>Twoje źródło informacji</Text>
+                    <Text style={styles.h1}>{slug.app_name}</Text>
+                    <Text style={styles.h2}>{slug.app_desc}</Text>
                     <Pressable
                         onPress={onPressHandlerFilters}
                         style={styles.btnBoxStart}>
                         <Text
                             fadeDuration={1100}
                             style={styles.btnStart}>
-                            WEJDŹ
+                            {slug.navi.start}
                         </Text>
                     </Pressable>
                 </View>
@@ -82,7 +83,7 @@ function StartPage({navigation}) {
                          <Text
                             fadeDuration={1200}
                             style={styles.btnLight}>
-                            Kontakt
+                            {slug.navi.contact}
                          </Text>
                      </Pressable>
                      <Pressable
@@ -91,7 +92,7 @@ function StartPage({navigation}) {
                             <Text
                                 fadeDuration={1200}
                                 style={styles.btnLight}>
-                                Eurodesk.pl
+                                {slug.navi.eurodesk}
                             </Text>
                      </Pressable>
                 </View>
@@ -126,10 +127,10 @@ const styles = StyleSheet.create({
     height: 50,
   },
   sectionCenter : {
-      flex: 2,
-      width: '100%',
-      alignItems: 'center',
-      justifyContent: 'center',
+    flex: 2,
+    width: '100%',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   icon: {
     width: 60,
@@ -137,11 +138,11 @@ const styles = StyleSheet.create({
   },
   h1: {
     fontSize: 60,
-    fontWeight: 600,
+    fontWeight: "600",
   },
   h2: {
     fontSize: 32,
-    fontWeight: 400,
+    fontWeight: "400",
   },
   btnBoxStart : {
     color: colors.primary,
@@ -155,27 +156,27 @@ const styles = StyleSheet.create({
     width: 'auto',
   },
   btnStart: {
-   color: colors.primary,
-   fontSize: 17,
-   fontWeight: 500,
-   textAlign: 'center',
+    color: colors.primary,
+    fontSize: 17,
+    fontWeight: "500",
+    textAlign: 'center',
   },
   sectionBottom : {
-     flex: 1,
-     width: '100%',
-     flexDirection: 'row',
-     alignItems: 'space-around',
-     justifyContent: 'space-around',
-     paddingHorizontal: 25,
-     paddingBottom: 15
+    flex: 1,
+    width: '100%',
+    flexDirection: 'row',
+    alignItems: 'space-around',
+    justifyContent: 'space-around',
+    paddingHorizontal: 25,
+    paddingBottom: 15
   },
   boxBottomLink: {
-      borderColor: colors.light,
+    borderColor: colors.light,
   },
   btnLight: {
-      color: colors.grey,
-      paddingHorizontal: 20,
-      paddingVertical: 5,
+    color: colors.grey,
+    paddingHorizontal: 20,
+    paddingVertical: 5,
   },
 });
 

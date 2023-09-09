@@ -21,7 +21,7 @@ function ContactPage({navigation}) {
                     style={styles.logo}
                     />
                 <View style={{textAlign: 'left' }}>
-                <Text style={{ fontWeight: '700', marginTop: 30 }}>Krajowe Biuro Eurodesk Polska</Text>
+                <Text style={{ fontWeight: 700, marginTop: 30 }}>Krajowe Biuro Eurodesk Polska</Text>
                 <Text style={{ marginTop: 15, color: '#999' }}>Fundacja Rozwoju Systemu Edukacji</Text>
                 <Text style={{ color: '#999' }}>Aleje Jerozolimskie 142A</Text>
                 <Text style={{ color: '#999' }}>02-305 Warszawa</Text>
@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
       },
     logo: {
         width: 160,
-        height: 48
+        height: 48,
     },
 
 });

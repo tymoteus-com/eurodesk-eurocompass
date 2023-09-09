@@ -4,7 +4,6 @@ import { StyleSheet, Text, View, Image, Button, Alert, Platform, Pressable } fro
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
-//import backButton from './app/Edesk';
 import colors from './app/config/colors';
 
 import StartPage from './app/pages/StartPage';
@@ -17,39 +16,39 @@ const Stack = createStackNavigator();
 export default function App() {
 
   return (
-            <NavigationContainer>
-                <Stack.Navigator>
-                  <Stack.Screen
-                    name="Eurodesk Polska"
-                    component={StartPage}
-                    options={{
-                     header: () => null
+    <NavigationContainer>
+        <Stack.Navigator>
+            <Stack.Screen
+                name="Eurodesk Polska"
+                component={StartPage}
+                options={{
+                    header: () => null
+                }}
+            />
+            <Stack.Screen
+                name="Wybierz"
+                component={FiltersPage}
+                options={{
+                    headerTitleAlign: 'center'
+                }}
+            />
+            <Stack.Screen
+                name="Eurokompas"
+                component={EurocompassPage}
+                options={{
+                    headerTitleAlign: 'center'
+                }}
+            />
+            <Stack.Screen
+                name="Kontakt"
+                component={ContactPage}
+                options={{
+                    headerTitleAlign: 'center'
                     }}
-                  />
-                  <Stack.Screen
-                    name="Wybierz"
-                    component={FiltersPage}
-                    options={{
-                        headerTitleAlign: 'center'
-                    }}
-                  />
-                  <Stack.Screen
-                     name="Eurokompas"
-                     component={EurocompassPage}
-                     options={{
-                         headerTitleAlign: 'center'
-                     }}
-                  />
-                  <Stack.Screen
-                    name="Kontakt"
-                    component={ContactPage}
-                    options={{
-                       headerTitleAlign: 'center'
-                    }}
-                  />
-                </Stack.Navigator>
-               <StatusBar style="auto" />
-            </NavigationContainer>
+            />
+        </Stack.Navigator>
+        <StatusBar style="auto" />
+    </NavigationContainer>
     );
 }
 
@@ -70,7 +69,7 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 25,
-    fontWeight: '500',
+    fontWeight: 500,
     color: 'red',
   },
   logo: {
@@ -80,7 +79,7 @@ const styles = StyleSheet.create({
   },
   title: {
       fontSize: 24,
-      fontWeight: 'bold',
+      fontWeight: 700,
     },
   boxBtnFooter: {
     position: 'absolute',

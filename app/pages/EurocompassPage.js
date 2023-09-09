@@ -5,6 +5,7 @@ import axios from "axios";
 
 import colors from '../config/colors';
 import env from '../config/env';
+import slug from '../config/slug';
 
 var items;
 var setData;
@@ -115,7 +116,7 @@ function EurocompassPage({ route, navigation }) {
        <View style={styles.containerFluid}>
             <View style={styles.header}>
                 <View style={styles.headerTxt}>
-                    <Text style={styles.qtyrecords}>Liczba rekordów: {count}</Text>
+                    <Text style={styles.qtyrecords}>{slug.label.records_number}: {count}</Text>
                 </View>
                 <View style={styles.headerIco}>
                 {(count > 0 && count < 51) ?
@@ -135,7 +136,7 @@ function EurocompassPage({ route, navigation }) {
             </View>
             : null }
         {count === 0 ?
-            <Text style={styles.alert}>:( Nie znaleziono pasujących rekordów. Wybierz Wstecz i zmień kryteria wyszukiwania</Text>
+            <Text style={styles.alert}>{slug.label.empty_records}</Text>
         : null }
         <FlatList
             data={items}
@@ -154,7 +155,7 @@ function EurocompassPage({ route, navigation }) {
                     onRefresh={ onRefresh }
                     colors={['#17a2b8']}
                     />
-            }
+                }
             >
         </FlatList>
        </View>
