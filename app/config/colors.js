@@ -9,4 +9,5 @@ export default {
     grey: '#737574',
     black: '#000',
     light: '#ddd',
+    white: '#ffffff'
 }

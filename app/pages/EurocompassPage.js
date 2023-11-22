@@ -83,8 +83,8 @@ function EurocompassPage({ route, navigation }) {
     [ items, setData ] = useState([]);
     const [ refreshing, setRefreshing ] = useState(false);
     const [ page, setPage ] = useState(1);
-    const { whom_id, category_id, source_id } = route.params;
-
+    const { whom_id, category_id, source_id, qsearch } = route.params;
+//console.log(qsearch);
     const onRefresh = ()=> {
         setRefreshing(true);
         { page < 5 ?
@@ -95,7 +95,8 @@ function EurocompassPage({ route, navigation }) {
 
     useEffect(() => {
         code = ''; //category_id.selectedCategory.toString() +'-'+ source_id.selectedSource.toString();
-        const api_uri = `${env.api.url}eurocompass?whom=${whom_id.selectedWhom.toString()}&category=${category_id.selectedCategory.toString()}&source=${source_id.selectedSource.toString()}`;
+        const api_uri = `${env.api.url}eurocompass?q=&whom=${whom_id.selectedWhom.toString()}&category=${category_id.selectedCategory.toString()}&source=${source_id.selectedSource.toString()}`;
+  console.log(qsearch);
         axios.get(api_uri).then((response) => {
              setData(response.data.item);
              setCount(response.data.count);

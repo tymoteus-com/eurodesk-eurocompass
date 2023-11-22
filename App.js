@@ -26,7 +26,7 @@ export default function App() {
                 }}
             />
             <Stack.Screen
-                name="Wybierz"
+                name="Wyszukaj"
                 component={FiltersPage}
                 options={{
                     headerTitleAlign: 'center'

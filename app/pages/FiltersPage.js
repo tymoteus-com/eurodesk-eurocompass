@@ -1,6 +1,6 @@
 import React, {useState, useEffect, useCallback } from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View, Text, Platform, Button, Alert, Pressable, TouchableOpacity, ScrollView, ActivityIndicator, RefreshControl } from 'react-native';
+import { StyleSheet, View, Text, TextInput, Platform, Button, Alert, Pressable, TouchableOpacity, ScrollView, ActivityIndicator, RefreshControl } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import BouncyCheckbox from "react-native-bouncy-checkbox";
@@ -92,6 +92,11 @@ function FiltersPage({navigation}) {
     }, []);
     // end zrodla
 
+    // pole szukaj
+     const [ qsearch, setQsearch ] = useState(''); //React.useState('');
+
+     // end pole szukaj
+
     const [ refreshing, setRefreshing ] = useState(false);
     const onRefresh = ()=> {
         setRefreshing(true);
@@ -112,6 +117,17 @@ function FiltersPage({navigation}) {
     return (
        <View style={styles.container}>
         <ScrollView>
+            <Text style={styles.listHeader}>
+                {slug.label.search}
+            </Text>
+            <TextInput
+                    style={styles.input}
+                    onChangeText={setQsearch}
+                    value={qsearch}
+                    inputMode="text"
+                    maxLength="30"
+                    placeholder={slug.label.search}
+                  />
             <Text style={styles.listHeader}>
                 {slug.label.form_whom}
             </Text>
@@ -191,7 +207,6 @@ function FiltersPage({navigation}) {
     )
 }
 
-
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -240,7 +255,15 @@ const styles = StyleSheet.create({
     btnSendText: {
         color: "#fff",
         fontSize: 15,
-    }
+    },
+    input: {
+        height: 50,
+        margin: 12,
+        borderWidth: 1,
+        borderColor: colors.primary,
+        padding: 15,
+        borderRadius: 5,
+      },
 });
 
 export default FiltersPage;

@@ -4,6 +4,7 @@ export default {
     page_name: 'Eurodesk Polska',
     label: {
         select: 'Wybierz',
+        search: 'Wpisz wyszukiwaną frazę',
         form_whom: 'Dla kogo',
         category: 'Kategoria',
         source: 'Źródło informacji',
@@ -11,7 +12,7 @@ export default {
         empty_records: ':( Nie znaleziono pasujących rekordów. Kliknij "Wstecz" i zmień kryteria wyszukiwania',
     },
     navi: {
-        filters: "Wybierz",
+        filters: "Wyszukaj",
         contact: "Kontakt",
         start: "WEJDŹ",
         search: 'WYSZUKAJ',
