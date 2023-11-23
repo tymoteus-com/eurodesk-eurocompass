@@ -5,9 +5,11 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 import colors from './app/config/colors';
+import slug from './app/config/slug';
 
 import StartPage from './app/pages/StartPage';
 import ContactPage from './app/pages/ContactPage';
+import InfoPage from './app/pages/InfoPage';
 import FiltersPage from './app/pages/FiltersPage';
 import EurocompassPage from './app/pages/EurocompassPage';
 
@@ -26,25 +28,32 @@ export default function App() {
                 }}
             />
             <Stack.Screen
-                name="Wyszukaj"
+                name={slug.navi.filters}
                 component={FiltersPage}
                 options={{
                     headerTitleAlign: 'center'
                 }}
             />
             <Stack.Screen
-                name="Eurokompas"
+                name={slug.navi.eurocompass}
                 component={EurocompassPage}
                 options={{
                     headerTitleAlign: 'center'
                 }}
             />
             <Stack.Screen
-                name="Kontakt"
+                name={slug.navi.contact}
                 component={ContactPage}
                 options={{
                     headerTitleAlign: 'center'
-                    }}
+                }}
+            />
+            <Stack.Screen
+                name={slug.navi.info}
+                component={InfoPage}
+                options={{
+                    headerTitleAlign: 'center'
+                }}
             />
         </Stack.Navigator>
         <StatusBar style="auto" />

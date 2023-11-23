@@ -46,6 +46,9 @@ function StartPage({navigation}) {
     const onPressHandlerContact = () => {
          navigation.navigate(slug.navi.contact);
     }
+    const onPressHandlerInfo = () => {
+          navigation.navigate(slug.navi.info);
+    }
 
     return (
             <View style={styles.container}>
@@ -77,6 +80,16 @@ function StartPage({navigation}) {
                     </Pressable>
                 </View>
                 <View style={styles.sectionBottom}>
+                     <Pressable
+                         onPress={onPressHandlerInfo}
+                         style={styles.boxBottomLink}>
+                         <Text
+                            fadeDuration={1200}
+                            style={styles.btnLight}>
+                            {slug.navi.info}
+                            </Text>
+                     </Pressable>
+
                      <Pressable
                          onPress={onPressHandlerContact}
                          style={styles.boxBottomLink}>

@@ -81,7 +81,7 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace "com.eurocompasseurodeskpl"
+    namespace 'pl.Eurocompass'
     defaultConfig {
         applicationId 'pl.Eurocompass'
         minSdkVersion rootProject.ext.minSdkVersion

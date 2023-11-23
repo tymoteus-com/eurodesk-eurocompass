@@ -125,8 +125,7 @@ function FiltersPage({navigation}) {
                     onChangeText={setQsearch}
                     value={qsearch}
                     inputMode="text"
-                    maxLength="30"
-                    placeholder={slug.label.search}
+                    placeholder="Słowo kluczowe"
                   />
             <Text style={styles.listHeader}>
                 {slug.label.form_whom}
@@ -197,6 +196,7 @@ function FiltersPage({navigation}) {
                 whom_id: {selectedWhom},
                 category_id: {selectedCategory},
                 source_id: {selectedSource},
+                q: {qsearch}
               });
            }}>
            <Text style={styles.btnSendText}>
@@ -259,6 +259,7 @@ const styles = StyleSheet.create({
     input: {
         height: 50,
         margin: 12,
+        marginBottom: 0,
         borderWidth: 1,
         borderColor: colors.primary,
         padding: 15,
