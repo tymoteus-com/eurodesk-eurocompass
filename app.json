@@ -16,14 +16,18 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "pl.Eurocompass"
+      "bundleIdentifier": "pl.Eurocompass",
+      "runtimeVersion": {
+        "policy": "sdkVersion"
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./app/assets/icon-eurodesk-eurokompas.png",
         "backgroundColor": "#ffff"
       },
-      "package": "pl.Eurocompass"
+      "package": "pl.Eurocompass",
+      "runtimeVersion": "1.0.0"
     },
     "web": {
       "favicon": "./app/assets/favicon.png",
@@ -35,7 +39,7 @@
       }
     },
     "updates": {
-      "useClassicUpdates": true
+      "url": "https://u.expo.dev/7dcec1c5-f31e-4889-9c7b-a6ff58ea7d4b"
     }
   }
 }

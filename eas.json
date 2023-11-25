@@ -7,7 +7,10 @@
     "preview": {
       "distribution": "internal"
     },
-    "production": {}
+    "production": {
+      "channel": "production",
+      "distribution": "store"
+    }
   },
   "cli": {
     "requireCommit": true,
@@ -17,7 +20,7 @@
     "production": {
       "android": {
         "serviceAccountKeyPath": "../keyApi/eurocompass/pc-api-8980465811777290521-864-8f04e877d8db.json",
-        "track": "beta",
+        "track": "production",
         "releaseStatus": "completed",
         "applicationId": "eurodesk-eurokompas-app"
       },
