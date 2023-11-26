@@ -17,7 +17,7 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "pl.Eurocompass",
-      "buildNumber": "2",
+      "buildNumber": "3",
       "runtimeVersion": {
         "policy": "sdkVersion"
       }
