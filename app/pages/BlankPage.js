@@ -4,7 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 import colors from '../config/colors';
-import edesk from '../Edesk';
+//import edesk from '../Edesk';
 
 function BlankPage({navigation}) {
 

@@ -5,7 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 import colors from '../config/colors';
-import edesk from '../Edesk';
+//import edesk from '../Edesk';
 import slug from '../config/slug';
 
 
@@ -23,7 +23,7 @@ function ContactPage({navigation}) {
             <View >
                 <View style={{textAlign: 'left' }}>
                     <Text style={styles.txt}>Wyszukiwarka informacji dla młodzieży i osób pracujących z młodzieżą. Jest systematycznie aktualizowana i zawiera tylko zweryfikowane informacje.</Text>
-                    <Text style={styles.txt}>Można je wyszukiwać według tematów, rodzajów źródeł i grup docelowych. Po zaznaczeniu odpowiednich kategorii kliknij „wyszukaj”.</Text>
+                    <Text style={styles.txt}>Można je wyszukiwać według tematów, rodzajów źródeł i grup docelowych. Po zaznaczeniu odpowiednich kategorii kliknij: Wyszukaj.</Text>
                     <Text style={styles.txt}>Jeśli któryś z wyników Cię zainteresuje, kliknij na jego tytuł, a przejdziesz do strony, na której znajdziesz więcej informacji. Powodzenia!</Text>
                     <Text style={styles.txt}>Krajowe Biuro Eurodesk Polska</Text>
                 </View>
