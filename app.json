@@ -28,7 +28,7 @@
         "backgroundColor": "#ffff"
       },
       "package": "pl.Eurocompass",
-      "versionCode": 3,
+      "versionCode": 4,
       "runtimeVersion": "1.1.2"
     },
     "web": {
