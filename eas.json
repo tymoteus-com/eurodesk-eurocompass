@@ -9,7 +9,8 @@
     },
     "production": {
       "channel": "production",
-      "distribution": "store"
+      "distribution": "store",
+      "autoIncrement": true
     }
   },
   "cli": {

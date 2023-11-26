@@ -17,7 +17,7 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "pl.Eurocompass",
-      "buildNumber": "1.1.1",
+      "buildNumber": "2",
       "runtimeVersion": {
         "policy": "sdkVersion"
       }
@@ -28,6 +28,7 @@
         "backgroundColor": "#ffff"
       },
       "package": "pl.Eurocompass",
+      "versionCode": 2,
       "runtimeVersion": "1.1.1"
     },
     "web": {
